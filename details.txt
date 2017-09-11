@@ -1,0 +1,5 @@
+- contact 
+- about me
+- home
+- video
+- tour dates
