@@ -30,7 +30,7 @@ body{
     background-attachement: fixed;
     background-repeat: no-repeat;
     background-color: #323232;
-//transition: all .3s ease;
+
 
 }
 
@@ -67,6 +67,7 @@ nav  span:hover{
     nav{
         display: flex;
         flex-direction: column;
+        font-size: .9em;
     }
 
     nav span:hover{
@@ -82,9 +83,10 @@ nav  span:hover{
 
         width: 70%;
         min-height: 550px;
-
+        padding-bottom: 20px;
         margin: auto;
         margin-top: 50px;
+        margin-bottom: 30px;
         background-color: rgba(50,51,54, .6);
     }
 }
@@ -96,8 +98,8 @@ nav  span:hover{
     margin-top: 80px;
     width: 50%;
     height: 40%;
-    background-color: rgba(35,67,163, .5);
-    padding: 10px;
+    background-color: rgba(20,59,152, .6);
+    padding: 20px;
 
     align-self: center;
     justify-self: center;
@@ -107,27 +109,7 @@ nav  span:hover{
 
 }
 
-@media (max-width: 980px){
 
-    .contact-container{
-        display: flex;
-        min-height: 200px;
-        padding: 70px;
-        width: 70%;
-
-
-    }
-
-    .welcome{
-        justify-self: flex-start;
-    }
-
-}
-
-.welcome{
-    font-size: 3em;
-    justify-self: flex-start;
-}
 
 .active:after{
     content: " *"
@@ -143,21 +125,28 @@ form{
 
 }
 form input{
-    display: inline-block;
+    display: inline;
     text-indent: 4px;
+    border-radius: 4px;
 }
 
 .email{
+    border: none;
     margin-top: 20px;
+    margin-bottom: 20px;
     height: 15%;
     font-family: 'Lato-Regular', Arial, serif;
     font-size: 2em;
 }
 .email-text{
+    border: none;
+    border-radius: 4px;
     text-indent: 5px;
     height: 40%;
     font-family: 'Lato-Regular', Arial, serif;
     font-size: 2em;
+    margin-bottom: 20px;
+    min-height: 90px;
 }
 
 .submit{
@@ -169,14 +158,65 @@ form input{
     border-radius: 10px;
     border: none;
     height: 15%;
+    min-height: 50px;
+}
+
+.interested-text{
+    align-self: center;
+    font-size: 1.2em;
 }
 
 .radio{
-    display: inline;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.interested-container{
+    display: flex;
+    padding: 20px;
 }
 
 .submit:hover{
     transition: all .3s ease;
     background-color: #A9251F;
 
+}
+
+@media (max-width: 980px){
+
+    .contact-container{
+        display: flex;
+        padding: 70px;
+        width: 70%;
+        min-height: 700px;
+    }
+
+    .email{
+        min-height: 50px;
+        font-size: 1.5em;
+    }
+
+    .email-text{
+        font-size: 1.8em;
+    }
+    .interested-container{
+        margin: 0px;
+    }
+
+    .radio{
+        width: 20em;
+    }
+
+}
+
+footer{
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    background-color: rgba(37,39,39, .5);
+    text-align: center;
+}
+
+.main-wrapper:before{
+    filter: blur(5px);
 }
