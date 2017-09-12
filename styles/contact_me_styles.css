@@ -21,22 +21,17 @@ a , body{
     margin: 0px auto;
 }
 
+
 body{
+    transition: all .3s ease;
     height: 100%;
-    background-image: url("../images/crowd.png");
+    background-image: url("../images/board.png");
     background-size: cover;
     background-attachement: fixed;
     background-repeat: no-repeat;
     background-color: #323232;
-    //transition: all .3s ease;
+//transition: all .3s ease;
 
-}
-
-@media (max-width: 700px) {
-    body {
-        background-image: url('../images/crowdSmall.png');
-        background-size: auto 100%;
-    }
 }
 
 .feloy {
@@ -87,26 +82,26 @@ nav  span:hover{
 
         width: 70%;
         min-height: 550px;
-        border-radius: 3px;
+
         margin: auto;
-        margin-top: 30px;
+        margin-top: 50px;
         background-color: rgba(50,51,54, .6);
     }
-
-
 }
 
-.welcome-container{
+
+.contact-container{
     display:flex;
     flex-direction: column;
     margin-top: 80px;
     width: 50%;
     height: 40%;
-    background-color: rgba(50,51,54, .6);
+    background-color: rgba(35,67,163, .5);
+    padding: 10px;
 
     align-self: center;
     justify-self: center;
-    border-radius: 5px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
 
@@ -114,12 +109,12 @@ nav  span:hover{
 
 @media (max-width: 980px){
 
-    .welcome-container{
+    .contact-container{
         display: flex;
         min-height: 200px;
         padding: 70px;
         width: 70%;
-        background-color: rgba(50,51,54, .9);
+
 
     }
 
@@ -134,10 +129,54 @@ nav  span:hover{
     justify-self: flex-start;
 }
 
-.description{
-    font-style: italic;
-}
-
 .active:after{
     content: " *"
+}
+form{
+    font-family: 'Lato-Regular', Arial, serif;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+    text-indent: 5px;
+
+}
+form input{
+    display: inline-block;
+    text-indent: 4px;
+}
+
+.email{
+    margin-top: 20px;
+    height: 15%;
+    font-family: 'Lato-Regular', Arial, serif;
+    font-size: 2em;
+}
+.email-text{
+    text-indent: 5px;
+    height: 40%;
+    font-family: 'Lato-Regular', Arial, serif;
+    font-size: 2em;
+}
+
+.submit{
+    font-family: 'Lato-Regular', Arial, serif;
+    font-size: 2em;
+    color: white;
+    margin: 0;
+    background-color: #E75038;
+    border-radius: 10px;
+    border: none;
+    height: 15%;
+}
+
+.radio{
+    display: inline;
+}
+
+.submit:hover{
+    transition: all .3s ease;
+    background-color: #A9251F;
+
 }
