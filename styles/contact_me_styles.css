@@ -98,7 +98,7 @@ nav  span:hover{
     margin-top: 80px;
     width: 50%;
     height: 40%;
-    background-color: rgba(20,59,152, .6);
+    background-color: rgba(0,0,0, .8);
     padding: 20px;
 
     align-self: center;
@@ -136,15 +136,17 @@ form input{
     margin-bottom: 20px;
     height: 15%;
     font-family: 'Lato-Regular', Arial, serif;
-    font-size: 2em;
+    font-size: 1.8em;
+    text-indent: 20px;
 }
 .email-text{
+    padding: 5px;
     border: none;
     border-radius: 4px;
-    text-indent: 5px;
+    text-indent: 15px;
     height: 40%;
     font-family: 'Lato-Regular', Arial, serif;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 20px;
     min-height: 90px;
 }
@@ -152,18 +154,22 @@ form input{
 .submit{
     font-family: 'Lato-Regular', Arial, serif;
     font-size: 2em;
-    color: white;
+    color: black;
     margin: 0;
-    background-color: #E75038;
+    background-color: rgba(255,255,255, .9);
     border-radius: 10px;
     border: none;
     height: 15%;
     min-height: 50px;
 }
 
+.submit{
+    transition: background-color .3s ease;
+    background-color: rgba(255,255,255, .9);
+}
 .interested-text{
     align-self: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .radio{
@@ -179,6 +185,7 @@ form input{
 .submit:hover{
     transition: all .3s ease;
     background-color: #A9251F;
+    color: white;
 
 }
 
@@ -194,10 +201,16 @@ form input{
     .email{
         min-height: 50px;
         font-size: 1.5em;
+        text-indent: 10px;
+        width: 130%;
+        align-self: center;
     }
 
     .email-text{
+        width: 125%;
+        align-self: center;
         font-size: 1.8em;
+        text-indent: 0;
     }
     .interested-container{
         margin: 0px;
