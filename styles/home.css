@@ -25,11 +25,8 @@ body{
     height: 100%;
     background-image: url("../images/crowd.png");
     background-size: cover;
-    background-attachement: fixed;
     background-repeat: no-repeat;
     background-color: #323232;
-    //transition: all .3s ease;
-
 }
 
 @media (max-width: 700px) {
@@ -92,8 +89,6 @@ nav  span:hover{
         margin-top: 30px;
         background-color: rgba(50,51,54, .6);
     }
-
-
 }
 
 .welcome-container{
@@ -122,11 +117,6 @@ nav  span:hover{
         background-color: rgba(50,51,54, .7);
 
     }
-
-    .welcome{
-        justify-self: flex-start;
-    }
-
 }
 
 .welcome{
