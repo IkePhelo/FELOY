@@ -43,11 +43,9 @@ nav  span{
     display: inline-block;
     font-size: 1.3em;
     transition: all .2s ease;
+    text-shadow: 2px 0 0 white;
 }
 
-nav a{
-
-}
 
 nav  span:hover{
     transform: scale(1.5);
@@ -59,22 +57,7 @@ nav  span:hover{
     width: 100%;
     height: 10%;
     justify-content: space-around;
-}
-
-{
-    display:flex;
-    flex-direction: column;
-    margin-top: 80px;
-    width: 50%;
-    height: 40%;
-    background-color: rgba(50,51,54, .6);
-    border-radius: 10px;
-    align-self: center;
-    justify-self: center;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-
+    margin-bottom: 20px;
 }
 
 @media (max-width: 980px){
@@ -92,6 +75,7 @@ nav  span:hover{
         font-weight: bold;
         font-size: 1.5em;
         color: white;
+        text-shadow: none;
     }
 
     .nav-wrapper{
@@ -107,14 +91,6 @@ nav  span:hover{
         margin-bottom: 80px;
     }
 
-    video{
-        display: flex;
-        min-height: 200px;
-        padding: 70px;
-        width: 70%;
-        background-color: rgba(50,51,54, .9);
-
-    }
 
 }
 

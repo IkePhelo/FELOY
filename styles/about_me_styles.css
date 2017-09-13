@@ -92,14 +92,14 @@ nav  span:hover{
 
 }
 
-.welcome-container{
+.about-container{
     display:flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin: 80px;
     width: 50%;
-    height: 40%;
+    height: 50%;
     background-color: rgba(50,51,54, .6);
-
+    padding: 40px;
     align-self: center;
     justify-self: center;
     border-radius: 5px;
@@ -110,22 +110,28 @@ nav  span:hover{
 
 @media (max-width: 980px){
 
-    .welcome-container{
-        display: flex;
-        min-height: 200px;
-        padding: 70px;
+    .about-container{
+        display: block;
+        word-wrap: break-word;
         width: 70%;
-        background-color: rgba(50,51,54, .9);
-
+        height: auto;
+        align-items: center;
+        text-overflow: clip;
+        background-color: rgba(50,51,54, .8);
     }
 
-    .welcome{
+    .nav-wrapper{
+        padding-bottom: 20px;
+    }
+
+
+    .who{
         justify-self: flex-start;
     }
 
 }
 
-.welcome{
+.who{
     font-size: 3em;
     justify-self: flex-start;
 }
